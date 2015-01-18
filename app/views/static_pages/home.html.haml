@@ -1,0 +1,17 @@
+%h1 Dzień dobry
+%p Żadnych ciekawych selectów
+
+= form_tag do
+  .field{style: "width: 25%"}
+    %p
+      %label{for: "option"} Super
+    %p
+      = hidden_field_tag :option, "", class: "select2"
+  .field{style: "width: 25%"}
+    = text_field_tag :option2, ""
+  .field{style: "width: 25%"}
+    %p
+      %label{for: "option3"} Wow
+    %p
+      = hidden_field_tag :option3, "", class: "select2"
+  = submit_tag "Wyślij", style: "width: 10%"
